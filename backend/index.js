@@ -25,11 +25,11 @@ the Express application. */
 app.use(cors());
 
 // Option 2: Allow Custom Origins
-app.use(cors({
-    origin: 'http://localhost:3000',
-    methods: ['GET', 'POST', 'PUT', 'DELETE'],
-    allowedHeader: [Content-type]
-}))
+// app.use(cors({
+//     origin: 'http://localhost:3000',
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
+//     allowedHeader: [Content-Type]
+// }))
 
 // A route for the homepage(Default route "/")
 app.get('/', (request, response) => {
